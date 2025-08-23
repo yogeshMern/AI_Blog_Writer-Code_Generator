@@ -53,7 +53,7 @@ const Report = () => {
     try {
       setIsSubmitting(true);
       setSuccessMsg("");
-      await Axios.post("http://localhost:7000/api/v1/report", reportData);
+      await Axios.post("https://ai-blog-writerandcode-generator-back.onrender.com/api/v1/report", reportData);
       setReportData({ email: "", message: "" });
       // setSuccessMsg("Report sent successfully!");
       toast.success("Report sent successfully!");
